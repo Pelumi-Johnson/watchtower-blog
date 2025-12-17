@@ -1,3 +1,24 @@
 /*
     You can add your own custom styles here.
-*/
+*//* Comics section header */
+.section-header {
+  margin-bottom: 2.5rem;
+}
+
+.section-header .section-title {
+  font-size: 2.4rem;        /* BIG title */
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--card-text-color-main); /* same bright text as cards */
+}
+
+.section-header .section-description {
+  margin-top: 1.1rem;
+  font-size: 1.8rem;      /* noticeably bigger, but still elegant */
+  line-height: 1.7;
+  color: var(--card-text-color-main);
+  max-width: 860px;
+}
+
+

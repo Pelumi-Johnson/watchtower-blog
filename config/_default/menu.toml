@@ -1,24 +1,69 @@
-# Configure main menu and social menu
-#[[main]]
-#identifier = "home"
-#name = "Home"
-#url = "/"
-#[main.params]
-#icon = "home"
-#newtab = true
+# ===============================
+# MAIN SIDEBAR MENU
+# ORDER: → COMICS → ARCHIVES → SEARCH → ABOUT
+# ===============================
+
+
+[[main]]
+identifier = "comics"
+name = "Comics"
+url = "/comics/"
+weight = 20
+
+  [main.params]
+  icon = "message-circle"  # (temporary safe icon; you can create comics.svg later)
+
+[[main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 30
+
+  [main.params]
+  icon = "archive"
+
+[[main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 40
+
+  [main.params]
+  icon = "search"
+
+[[main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 50
+
+  [main.params]
+  icon = "user"
+
+# ===============================
+# SOCIAL ICONS
+# ===============================
 
 [[social]]
 identifier = "github"
 name = "GitHub"
-url = "https://github.com/CaiJimmy/hugo-theme-stack"
+url = "https://github.com/Pelumi-Johnson"
 
-[social.params]
-icon = "brand-github"
+  [social.params]
+  icon = "brand-github"
 
 [[social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com"
+identifier = "instagram"
+name = "Instagram"
+url = "https://www.instagram.com/lumijohnson_/"
 
-[social.params]
-icon = "brand-twitter"
+  [social.params]
+  icon = "brand-instagram"
+
+[[social]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/cyberlyon/"
+
+  [social.params]
+  icon = "brand-linkedin"

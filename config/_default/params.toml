@@ -1,44 +1,45 @@
 # Pages placed under these sections will be shown on homepage and archive page.
 mainSections = ["post"]
+
 # Output page's full content in RSS.
 rssFullContent = true
+
 favicon = "/favicon.png"
+
 
 [footer]
 since = 2020
 customText = ""
 
+
 [dateFormat]
 published = "Jan 02, 2006"
 lastUpdated = "Jan 02, 2006 15:04 MST"
 
+
 [sidebar]
-emoji = "🍥"
-subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+subtitle = "Notes, reflections, and lessons in progress."
+
 
 [sidebar.avatar]
 enabled = true
 local = true
 src = "img/avatar.png"
 
+
 [article]
 headingAnchor = false
 math = false
 readingTime = true
 
+
 [article.license]
-enabled = true
+enabled = false
 default = "Licensed under CC BY-NC-SA 4.0"
 
-## Widgets
-[[widgets.homepage]]
-type = "search"
 
-[[widgets.homepage]]
-type = "archives"
-
-[widgets.homepage.params]
-limit = 5
+## WIDGETS (RIGHT SIDEBAR ONLY)
+## Search + Archives REMOVED so menu controls sidebar order
 
 [[widgets.homepage]]
 type = "categories"
@@ -46,27 +47,33 @@ type = "categories"
 [widgets.homepage.params]
 limit = 10
 
+
 [[widgets.homepage]]
 type = "tag-cloud"
 
 [widgets.homepage.params]
 limit = 10
 
+
 [[widgets.page]]
 type = "toc"
+
 
 [opengraph.twitter]
 site = ""
 card = "summary_large_image"
+
 
 [defaultImage.opengraph]
 enabled = false
 local = false
 src = ""
 
+
 [colorScheme]
 toggle = true
 default = "auto"
+
 
 [imageProcessing.cover]
 enabled = true
@@ -74,10 +81,12 @@ enabled = true
 [imageProcessing.content]
 enabled = true
 
-## Comments
+
+## COMMENTS (DISABLED)
 [comments]
-enabled = true
+enabled = false
 provider = "disqus"
+
 
 [comments.disqusjs]
 shortname = ""
@@ -86,15 +95,18 @@ apiKey = ""
 admin = ""
 adminLabel = ""
 
+
 [comments.utterances]
 repo = ""
 issueTerm = "pathname"
 label = ""
 
+
 [comments.remark42]
 host = ""
 site = ""
 locale = ""
+
 
 [comments.vssue]
 platform = ""
@@ -103,6 +115,7 @@ repo = ""
 clientId = ""
 clientSecret = ""
 autoCreateIssue = false
+
 
 [comments.waline]
 serverURL = ""
@@ -113,8 +126,10 @@ emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
 requiredMeta = ["name", "email", "url"]
 placeholder = ""
 
+
 [comments.waline.locale]
 admin = "Admin"
+
 
 [comments.twikoo]
 envId = ""
@@ -122,10 +137,12 @@ region = ""
 path = ""
 lang = ""
 
+
 [comments.cactus]
 defaultHomeserverUrl = "https://matrix.cactus.chat:8448"
 serverName = "cactus.chat"
 siteName = ""
+
 
 [comments.giscus]
 repo = ""
@@ -138,6 +155,7 @@ darkTheme = ""
 reactionsEnabled = 1
 emitMetadata = 0
 
+
 [comments.gitalk]
 owner = ""
 admin = ""
@@ -145,6 +163,11 @@ repo = ""
 clientID = ""
 clientSecret = ""
 
+
 [comments.cusdis]
 host = ""
 id = ""
+
+
+[menu]
+showIcons = true
